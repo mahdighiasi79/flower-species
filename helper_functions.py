@@ -135,7 +135,6 @@ def MutualInformation(feature1, feature2):
     mutual_information = Entropy(feature1) + Entropy(feature2) - joint_entropy
     return mutual_information
 
-
 # def DetectOutliers(feature):
 #     records = len(feature)
 #

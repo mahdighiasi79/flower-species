@@ -4,7 +4,8 @@ import copy
 
 df = pd.read_csv("data3.csv")
 features = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
-split_margins = {"sepal_length": [5, 7], "sepal_width": [2.5, 3.5], "petal_length": [2.5, 4.5], "petal_width": [0.6, 1.6]}
+split_margins = {"sepal_length": [5, 7], "sepal_width": [2.5, 3.5], "petal_length": [2.5, 4.5],
+                 "petal_width": [0.6, 1.6]}
 
 
 class Node:
@@ -154,7 +155,7 @@ if __name__ == "__main__":
             if prediction == target_feature[record_number]:
                 true_predictions += 1
         accuracy = (true_predictions / len(test_set)) * 100
-        print("round", i+1, "accuracy:", accuracy)
+        print("round", i + 1, "accuracy:", accuracy)
 
         average_accuracy += accuracy
 
